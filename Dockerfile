@@ -1,6 +1,6 @@
 FROM fedora:27
 
-ADD root/dot-bashrc /root/.bashrc
+ADD files/ /
 
 RUN dnf update -y
 
