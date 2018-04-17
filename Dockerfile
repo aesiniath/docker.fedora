@@ -1,6 +1,6 @@
 FROM fedora:27
 
-ADD files/ /
+COPY files/. /
 
 RUN dnf update -y
 

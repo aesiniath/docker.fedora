@@ -26,9 +26,9 @@ baseline () {
 		--volume=${PWD}/build/inside:/mnt:z \
 		--volume=fedora-package-cache:/var/cache:z \
 		--tty=true \
-		fedora:27 > .stamp/running /mnt/baseline.sh
+		fedora:27 /mnt/baseline.sh > .stamp/running
 	ID=`cat .stamp/running`
-	docker cp files/ ${ID}:/
+	docker cp files/. ${ID}:/
 	docker start ${ID}
 	docker attach ${ID}
 	docker commit ${ID} afcowie/fedora:27
