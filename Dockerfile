@@ -1,4 +1,4 @@
-FROM fedora:27
+FROM docker.io/library/fedora:27
 
 COPY files/. /
 
