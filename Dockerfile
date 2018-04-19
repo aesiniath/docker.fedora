@@ -7,5 +7,5 @@ COPY files/root/. /root
 
 # sync metadata and bring base packages up-to-date
 
-RUN dnf update -y
+RUN dnf update -y && dnf clean all
 
