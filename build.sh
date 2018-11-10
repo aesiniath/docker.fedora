@@ -7,6 +7,6 @@ if [ ! -f .stamp ] ; then
 fi
 
 docker build \
-	--tag="localhost/afcowie/fedora:28" \
+	--tag="localhost/afcowie/fedora:29" \
 	--network="proxy" \
 	.

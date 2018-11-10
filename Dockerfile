@@ -1,4 +1,4 @@
-FROM docker.io/library/fedora:28
+FROM docker.io/library/fedora:29
 COPY .stamp /
 
 # copy in *.repo containing reference to local proxy repository
