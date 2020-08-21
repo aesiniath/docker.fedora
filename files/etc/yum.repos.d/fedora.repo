@@ -1,7 +1,7 @@
 [fedora]
 name=Fedora $releasever - $basearch - Release
 failovermethod=priority
-baseurl=http://packages/fedora/linux/releases/$releasever/Everything/$basearch/os/
+baseurl=http://127.0.0.1:1999/fedora/linux/releases/$releasever/Everything/$basearch/os/
 enabled=1
 metadata_expire=7d
 repo_gpgcheck=0
